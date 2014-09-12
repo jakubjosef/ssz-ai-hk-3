@@ -1,3 +1,5 @@
 =========
 Principy operačních systémů (základní rozdělení, druhy operačních systémů, procesy, správa procesů a systémových zdrojů, uživatelská rozhraní).
 =========
+
+:download:`Otázka v PDF <pdf/12.pdf>`
