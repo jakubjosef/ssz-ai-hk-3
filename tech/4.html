@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>10. Směrování (základní principy, směrovací protokoly, směrovací algoritmy, směrovače) &mdash; Otázky na státnice 0.1.0 documentation</title>
+    <title>4. Architektura periferních zařízení (rozdělení, principy, funkce, typy, rozhraní, příklady) &mdash; Otázky na státnice 0.1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -31,8 +31,8 @@
     <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="top" title="Otázky na státnice 0.1.0 documentation" href="../index.html" />
-    <link rel="next" title="11. Management (správa) sítě" href="11.html" />
-    <link rel="prev" title="9. Internet (organizační struktura, vývoj, RFC dokumenty, domény, technické předpoklady pro připojení, hrozby)" href="9.html" />
+    <link rel="next" title="5. Servery a pracovní stanice (rozdíly, kritéria výběru, role serverů, serverové technologie, zálohování dat včetně RAID)" href="5.html" />
+    <link rel="prev" title="3. Paměťový systém počítače a ukládání dat (typy, principy fungování, frekvence, normy, logická a fyzická struktura disku, RAM, ROM, Cache, HDD, CD, DVD, FLASH…)" href="3.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -87,13 +87,13 @@
 <li class="toctree-l1"><a class="reference internal" href="1.html">1. Principy počítačů</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2.html">2. Architektura počítače (von Neumannovo a Harwardské schéma, Flynnova taxonomie, základní deska, procesor, mikroarchitektura procesoru, paměti, sběrnice, řadič, přídavné karty, ovladače).</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.html">3. Paměťový systém počítače a ukládání dat (typy, principy fungování, frekvence, normy, logická a fyzická struktura disku, RAM, ROM, Cache, HDD, CD, DVD, FLASH…)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4.html">4. Architektura periferních zařízení (rozdělení, principy, funkce, typy, rozhraní, příklady)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">4. Architektura periferních zařízení (rozdělení, principy, funkce, typy, rozhraní, příklady)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="5.html">5. Servery a pracovní stanice (rozdíly, kritéria výběru, role serverů, serverové technologie, zálohování dat včetně RAID)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6.html">6. 6. Komunikační prostředky (principy komunikace, modulace signálu, rozdělení a porovnání, média, mobilní technologie)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="7.html">7. 7. ETHERNET (principy fungování, vývoj a topologie, přístupová metoda, síťová karta, strukturovaná kabeláž)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="8.html">8. 8. ISO - OSI TCP/IP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9.html">9. Internet (organizační struktura, vývoj, RFC dokumenty, domény, technické předpoklady pro připojení, hrozby)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">10. Směrování (základní principy, směrovací protokoly, směrovací algoritmy, směrovače)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10.html">10. Směrování (základní principy, směrovací protokoly, směrovací algoritmy, směrovače)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11.html">11. Management (správa) sítě</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11.html#wifi">12. WIFI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11.html#s-postupnym-rustem-site-se-v-ni-musi-nachazet-vice-zarizeni">13. S postupným růstem sítě se v ní musí nacházet více zařízení</a></li>
@@ -119,17 +119,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">10. Směrování (základní principy, směrovací protokoly, směrovací algoritmy, směrovače)</a><ul>
-<li><a class="reference internal" href="#zakladni-funkce-routeru">10.1. Základní funkce routeru</a></li>
-<li><a class="reference internal" href="#router-smerovac">10.2. Router (směrovač)</a></li>
-<li><a class="reference internal" href="#k-vyhodnym-vlastnostem-patri">10.3. K výhodným vlastnostem patří</a></li>
-<li><a class="reference internal" href="#konfigurace-routeru">10.4. Konfigurace routeru</a></li>
-<li><a class="reference internal" href="#vyznam-vytvoreni-podsiti">10.5. Význam vytvoření podsítí</a></li>
-<li><a class="reference internal" href="#staticke-routovani">10.6. Statické routování</a></li>
-<li><a class="reference internal" href="#smerovaci-protokoly">10.7. Směrovací protokoly</a></li>
-<li><a class="reference internal" href="#rozhodovani">10.8. Rozhodování</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">4. Architektura periferních zařízení (rozdělení, principy, funkce, typy, rozhraní, příklady)</a></li>
 </ul>
 </ul>
 </li>
@@ -139,11 +129,11 @@
               
                 
   <li>
-    <a href="9.html" title="Previous Chapter: 9. Internet (organizační struktura, vývoj, RFC dokumenty, domény, technické předpoklady pro připojení, hrozby)"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; 9. Internet (org...</span>
+    <a href="3.html" title="Previous Chapter: 3. Paměťový systém počítače a ukládání dat (typy, principy fungování, frekvence, normy, logická a fyzická struktura disku, RAM, ROM, Cache, HDD, CD, DVD, FLASH…)"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; 3. Paměťový syst...</span>
     </a>
   </li>
   <li>
-    <a href="11.html" title="Next Chapter: 11. Management (správa) sítě"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">11. Management (... &raquo;</span>
+    <a href="5.html" title="Next Chapter: 5. Servery a pracovní stanice (rozdíly, kritéria výběru, role serverů, serverové technologie, zálohování dat včetně RAID)"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">5. Servery a pra... &raquo;</span>
     </a>
   </li>
               
@@ -153,7 +143,7 @@
             
               <li class="hidden-sm">
 <div id="sourcelink">
-  <a href="../_sources/tech/10.txt"
+  <a href="../_sources/tech/4.txt"
      rel="nofollow">Source</a>
 </div></li>
             
@@ -177,112 +167,9 @@
   <div class="row">
     <div class="col-md-12">
       
-  <div class="section" id="smerovani-zakladni-principy-smerovaci-protokoly-smerovaci-algoritmy-smerovace">
-<h1>10. Směrování (základní principy, směrovací protokoly, směrovací algoritmy, směrovače)<a class="headerlink" href="#smerovani-zakladni-principy-smerovaci-protokoly-smerovaci-algoritmy-smerovace" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="zakladni-funkce-routeru">
-<h2>10.1. Základní funkce routeru<a class="headerlink" href="#zakladni-funkce-routeru" title="Permalink to this headline">¶</a></h2>
-<p>router = směrovač
-* protokolově závislý
-* umožňuje propojení více než dvou částí globální sítě
-* spojuje různé sítě pracující však na stejném protokolu a <strong>hledá optimální cesty mezi uzly</strong>
-* přejímá rámce mezi sítěmi a na chvíli vždy spojí ty dvě, mezi kterými probíhá komunikace
-* pro každou síť si ukládá tabulku logických adres
-* užívá směrovací (routovací) tabulky – pomáhají mu v&nbsp;rozhodování
-* omezuje výskyt kolizí
-* přenosový protokol definován na 3. a 4. vrstvě (např. IP vyžaduje TCP)</p>
-</div>
-<div class="section" id="router-smerovac">
-<h2>10.2. Router (směrovač)<a class="headerlink" href="#router-smerovac" title="Permalink to this headline">¶</a></h2>
-<p>hardwarové zařízení, které přebírá data z lokální počítačové sítě a směruje je na vzdálený cíl po telefonní či jiné dálkové lince (ISDN, optika), popřípadě provádí opačnou funkci. Náročné zařízení umožňující simultánně přebírat a směrovat data z různých zdrojů na různé cíle, obsahuje také řadu bezpečnostních algoritmů zabraňujících probourání vetřelců do lokální sítě. Směrovače také řídí správným způsobem provoz na linkách, korigují chyby atd.</p>
-</div>
-<div class="section" id="k-vyhodnym-vlastnostem-patri">
-<h2>10.3. K výhodným vlastnostem patří<a class="headerlink" href="#k-vyhodnym-vlastnostem-patri" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Router nemusí reagovat na všechny rámce (jako bridge), ale pouze na rámce které jsou mu adresovány (je adresovatelný). Tím je dáno menší zatížení routeru.</li>
-<li>Router pracuje s adresami sítí a MAC adresy počítačů musí znát pouze pro přímo připojené sítě. Tím dochází ke značné redukci tabulek (router používá tzv. směrovací tabulku) oproti bridgi, a router je možné použít jako propojovací prvek pro velmi rozsáhlé sítě (např. Internet).</li>
-<li>Protokoly třetí vrstvy mohou obsahovat algoritmy pro paralelní cesty, takže routerům nečiní potíže pracovat v sítích s nejednoznačnou topologií.</li>
-<li>Pomocí routerů lze propojovat sítě, které se na druhé vrstvě liší délkou hardwarové adresy.</li>
-</ul>
-<p>Jako relativně nevýhodné vlastnosti lze uvést:
-* O přítomnosti routeru (na rozdíl od bridge) musí odesílatel vědět, pro komunikaci prostřednictvím routeru tedy musí být každá stanice nakonfigurována (je třeba jí přidělit síťovou adresu a sdělit jí adresu routeru) a nakonfigurován musí být i samotný router.
-* Router je závislý na protokolu použitém třetí vrstvou, nemůže tedy existovat např. univerzální router pro Ethernet. (Činnost routeru je realizována softwarově, takže pro směrování více protokolů může být použit fyzicky jeden počítač s více směrovacími programy.)</p>
-</div>
-<div class="section" id="konfigurace-routeru">
-<h2>10.4. Konfigurace routeru<a class="headerlink" href="#konfigurace-routeru" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Cisco IOS</li>
-<li>telnet, ssh, console port</li>
-<li>Security Device Manager (SDM)</li>
-</ul>
-<p>viz. např. <a class="reference external" href="http://www.cisco.com/c/en/us/td/docs/routers/access/1900/software/configuration/guide/Software_Configuration/routconf.html">http://www.cisco.com/c/en/us/td/docs/routers/access/1900/software/configuration/guide/Software_Configuration/routconf.html</a></p>
-</div>
-<div class="section" id="vyznam-vytvoreni-podsiti">
-<h2>10.5. Význam vytvoření podsítí<a class="headerlink" href="#vyznam-vytvoreni-podsiti" title="Permalink to this headline">¶</a></h2>
-<p>význam: u velkých sítí (např. poskytovatelé Internetu)
-podsíť:
-určitou síť tvoří skupina dílčích sítí (podsítí):
-taková síť by bez použití podsítí měla několik adres
-s&nbsp;použitím podsítí má adresu pouze jednu a vůči svému okolí vystupuje jako jeden celek
-počítače jsou přímo spojeny (na 2. vrstvě)
-maska podsítě určuje hranici mezi adresou podsítě a adresou počítače v ní
-obsahuje 1 v bitech adresy sítě a podsítě, 0 jinde
-např. 147.230.26.98 s maskou 255.255.255.0 – počítač s adresou 98 v podsíti 147.230.26.98
-pokud cílová adresa leží ve stejné podsíti, posílá se datagram přímo adresátovi</p>
-</div>
-<div class="section" id="staticke-routovani">
-<h2>10.6. Statické routování<a class="headerlink" href="#staticke-routovani" title="Permalink to this headline">¶</a></h2>
-<p>směrování (routování) je základní funkcí síťové vrstvy
-směrování se provádí za pomocí směrovací tabulky – ta může být:
-statická (neadaptivní):
-udržována ručně
-nepřizpůsobuje se situaci v&nbsp;síti
-dynamická (adaptivní):
-přizpůsobuje se situaci
-globální (centralizované) – řídí centrum
-lokální (izolované) – každý sám za sebe
-distribuované – spolupracují sousedé
-routovací protokoly tvoří inteligenci sítě
-router vidí díky tabulce dále než ke svému sousedovi
-aktualizace směrovacích tabulek má povahu řídící zprávy – vyšší priorita
-vlivem zpoždění při přenosu tabulek mohou vznikat routovací smyčky
-Dynamické routovací protokoly
-směrování (routování) je základní funkcí síťové vrstvy
-směrování se provádí za pomoci dynamické (adaptivní) směrovací tabulky:
-přizpůsobuje se situaci
-globální (centralizované) – řídí centrum
-lokální (izolované) – každý sám za sebe
-distribuované – spolupracují sousedé
-routovací protokoly tvoří inteligenci sítě
-router vidí díky tabulce dále než ke svému sousedovi
-aktualizace směrovacích tabulek má povahu řídící zprávy – vyšší priorita
-vlivem zpoždění při přenosu tabulek mohou vznikat routovací smyčky</p>
-</div>
-<div class="section" id="smerovaci-protokoly">
-<h2>10.7. Směrovací protokoly<a class="headerlink" href="#smerovaci-protokoly" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>RIP = Routing Information Protocol (RFC 1388)</li>
-<li>IGRP = Interior Gateway Routing Protocol - robustnější než RIP – vektor vzdáleností</li>
-<li>EIGRP = Enhanced   Interior Gateway Routing Protocol</li>
-<li>hybridní routovací  protocol</li>
-<li>používá spolehlivý přenosový protocol  RTP (Realiable Transport Protocol)</li>
-<li>OSPF = Open Shortest Path First</li>
-<li>otevírá nejkratší cestu jako první</li>
-<li>pracuje nad „doménovým“ rozdělením sítí (AREA)</li>
-<li>RIP2 - používá se málo (metrika jen 16)</li>
-<li>MPLS  (MultiProtocol Label Switching)</li>
-<li>BGP - Border Gateway Protocol (BGP) je dynamický směrovací protokol používaný pro směrování mezi autonomními systémy (AS). Je základem propojení sítí různých ISP v peeringových uzlech.</li>
-</ul>
-</div>
-<div class="section" id="rozhodovani">
-<h2>10.8. Rozhodování<a class="headerlink" href="#rozhodovani" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>vektor vzdáleností</li>
-<li>zpoždění na lince</li>
-<li>spolehlivost</li>
-<li>zatížení</li>
-</ul>
-<p>Více o BGP: <a class="reference external" href="http://cs.wikipedia.org/wiki/Border_Gateway_Protocol">http://cs.wikipedia.org/wiki/Border_Gateway_Protocol</a></p>
-</div>
+  <div class="section" id="architektura-perifernich-zarizeni-rozdeleni-principy-funkce-typy-rozhrani-priklady">
+<h1>4. Architektura periferních zařízení (rozdělení, principy, funkce, typy, rozhraní, příklady)<a class="headerlink" href="#architektura-perifernich-zarizeni-rozdeleni-principy-funkce-typy-rozhrani-priklady" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference download internal" href="../_downloads/4.pdf"><tt class="xref download docutils literal"><span class="pre">Otázka</span> <span class="pre">v</span> <span class="pre">PDF</span></tt></a></p>
 </div>
 
 
